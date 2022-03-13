@@ -25,9 +25,6 @@ Route::get('/', function () {
 
 //Route::get('get_data',[TimetableController::class,'get_data']);
 
-Route::get(
-    'get_data',
-    [TimetableController::class, 'month']
-)->name('get_data');
+Route::get('get_data',[TimetableController::class, 'month']);
 
 // Route::get('/alldata/{date}',[TimetableController::class,'details'])->name('details');
